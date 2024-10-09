@@ -5,55 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TechStore - Fone de Ouvido Bluetooth</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <div class="top-bar">
         <div class="logo">
-          <img src="logo.png" alt="Logo Hora de Codar" />
+          <img src="img/logo.png" alt="Logo Hora de Codar" />
           <h1>TechStore</h1>
         </div>
         <nav class="nav">
-          <a href="#">Homem</a>
-          <a href="#">Mulher</a>
-          <a href="#">Crianças</a>
-          <a href="#">Promoção</a>
+          <a href="#">Computadores</a>
+          <a href="#">TVs</a>
+          <a href="#">Acessórios</a>
+          <a href="#">Promoções</a>
         </nav>
         <div class="user-options">
-          <a href="#">login / cadastro</a>
+          <a href="#"><i class="fas fa-user"></i> login / cadastro</a>
           <input type="text" placeholder="Buscar produto" />
+          <i class="fas fa-search"></i>
         </div>
       </div>
     </header>
     <main class="container">
       <div class="product-details">
         <div class="product-gallery">
-          <img
-            src="https://via.placeholder.com/600x400"
-            alt="Fone de Ouvido Bluetooth"
-          />
+          <img src="img/fone_destaque.png" alt="Fone de Ouvido Bluetooth" />
           <div class="gallery-thumbnails">
-            <img
-              src="https://via.placeholder.com/100x100"
-              alt="Fone de Ouvido - Detalhe 1"
-            />
-            <img
-              src="https://via.placeholder.com/100x100"
-              alt="Fone de Ouvido - Detalhe 2"
-            />
-            <img
-              src="https://via.placeholder.com/100x100"
-              alt="Fone de Ouvido - Detalhe 3"
-            />
+            <img src="img/fone1.png" alt="Fone de Ouvido - Detalhe 1" />
+            <img src="img/fone2.png" alt="Fone de Ouvido - Detalhe 2" />
+            <img src="img/fone3.png" alt="Fone de Ouvido - Detalhe 3" />
           </div>
         </div>
         <div class="product-info">
-          <p class="product-path">Tecnologia / Fones / Sem Fio</p>
+          <p class="product-path">
+            <i class="fas fa-chevron-right"></i> Tecnologia / Fones / Sem Fio
+          </p>
           <h2>Fone de Ouvido Bluetooth - Preto</h2>
           <p class="product-code">Código do Produto: 98765XYZ</p>
           <p class="price">R$ 350,00</p>
           <p class="rating">
-            &#9733;&#9733;&#9733;&#9733;&#9734; 45 avaliações
+            <i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star"></i><i class="fas fa-star"></i
+            ><i class="fas fa-star-half-alt"></i> 45 avaliações
           </p>
           <p class="product-description">
             Aproveite uma experiência sonora única com nossos fones de ouvido
@@ -71,21 +68,24 @@
             <input type="number" id="quantity" value="1" />
           </div>
           <div class="buttons">
-            <button class="add-to-cart">Adicionar ao carrinho</button>
+            <button class="add-to-cart">
+              <i class="fas fa-shopping-cart"></i> Adicionar ao carrinho
+            </button>
             <button class="add-to-wishlist">
-              Adicionar à lista de desejos
+              <i class="fas fa-heart"></i> Adicionar à lista de desejos
             </button>
           </div>
           <p class="delivery">
-            Estimativa de Entrega: Consulte nossos Termos e Condições
+            <i class="fas fa-truck"></i> Estimativa de Entrega: Consulte nossos
+            Termos e Condições
           </p>
         </div>
       </div>
       <div class="product-specs">
         <ul class="tabs">
-          <li>Detalhes</li>
-          <li>Devolução</li>
-          <li>Entrega</li>
+          <li><i class="fas fa-info-circle"></i> Detalhes</li>
+          <li><i class="fas fa-undo"></i> Devolução</li>
+          <li><i class="fas fa-shipping-fast"></i> Entrega</li>
         </ul>
         <div class="specs-content">
           <div>
