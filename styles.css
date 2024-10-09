@@ -1,0 +1,286 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e1e1e;
+}
+
+.top-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.logo h1 {
+  margin: 0;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: #ffa500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-options {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-options a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.user-options input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.icons span {
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.product-details {
+  display: flex;
+  gap: 40px;
+}
+
+.product-gallery {
+  flex: 1;
+}
+
+.product-gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.gallery-thumbnails img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.gallery-thumbnails img:hover {
+  border: 2px solid #ffa500;
+}
+
+.product-info {
+  flex: 1;
+}
+
+.product-path {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.product-info h2 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+
+.product-code {
+  color: #777;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 2rem;
+  color: #ffa500;
+  margin: 10px 0;
+}
+
+.rating {
+  color: #81c784;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #b0b0b0;
+  margin-bottom: 20px;
+}
+
+.product-options {
+  margin: 20px 0;
+}
+
+.product-options label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+.product-options select,
+.product-options input[type="number"] {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.add-to-cart {
+  padding: 15px 30px;
+  background-color: #1e1e1e;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #388e3c;
+}
+
+.add-to-wishlist {
+  padding: 15px 30px;
+  background-color: #121212;
+  color: #ffa500;
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.add-to-wishlist:hover {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.delivery {
+  margin-top: 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.product-specs {
+  margin-top: 40px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.tabs li {
+  list-style: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #777;
+}
+
+.tabs li:hover {
+  color: #ffa500;
+}
+
+.specs-content p {
+  font-size: 1rem;
+  color: #b0b0b0;
+  margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .product-details {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .product-gallery img,
+  .product-info {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  .product-info h2 {
+    font-size: 2rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+  }
+}
